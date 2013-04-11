@@ -15,8 +15,8 @@
     <!ENTITY InformationObjects "http://www.loa-cnr.it/ontologies/InformationObjects.owl#" >
 ]>
 
-<rdf:RDF xmlns="http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/JurisdictionalDomainSchema.owl"
-     xml:base="http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/JurisdictionalDomainSchema.owl"
+<rdf:RDF xmlns="https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl"
+     xml:base="https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl"
      xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
      xmlns:SocialUnits="http://www.loa-cnr.it/ontologies/SocialUnits.owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -34,7 +34,7 @@
         <dc:title>Jurisdictional domain ontology</dc:title>
         <dc:language>en</dc:language>
         <dc:format>owl</dc:format>
-        <dc:identifier>http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/JurisdictionalDomainSchema.owl</dc:identifier>
+        <dc:identifier>https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl</dc:identifier>
         <dc:subject>Jurisdictional domain</dc:subject>
         <dc:description
             >This ontology propose a model to facilitate the description of the administrative, spatial, and temporal features of jruisdictional domains</dc:description>
@@ -73,7 +73,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#dissolved-into -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#dissolved-into -->
 
     <owl:ObjectProperty rdf:about="#dissolved-into">
         <dc:description
@@ -84,7 +84,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#dissolves -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#dissolves -->
 
     <owl:ObjectProperty rdf:about="#dissolves">
         <dc:description
@@ -94,7 +94,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#fused-into -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#fused-into -->
 
     <owl:ObjectProperty rdf:about="#fused-into">
         <dc:description
@@ -105,7 +105,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#fuses -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#fuses -->
 
     <owl:ObjectProperty rdf:about="#fuses">
         <dc:description
@@ -115,7 +115,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#incorporated-into -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#incorporated-into -->
 
     <owl:ObjectProperty rdf:about="#incorporated-into">
         <dc:description
@@ -126,7 +126,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#incorpores -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#incorpores -->
 
     <owl:ObjectProperty rdf:about="#incorpores">
         <dc:description
@@ -136,7 +136,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#partially-incorporated-into -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#partially-incorporated-into -->
 
     <owl:ObjectProperty rdf:about="#partially-incorporated-into">
         <dc:description
@@ -147,7 +147,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#partially-incorpores -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#partially-incorpores -->
 
     <owl:ObjectProperty rdf:about="#partially-incorpores">
         <dc:description
@@ -157,7 +157,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#segregated-from -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#segregated-from -->
 
     <owl:ObjectProperty rdf:about="#segregated-from">
         <dc:description
@@ -167,7 +167,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#segregates -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#segregates -->
 
     <owl:ObjectProperty rdf:about="#segregates">
         <dc:description
@@ -233,7 +233,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#final-instant -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#final-instant -->
 
     <owl:DatatypeProperty rdf:about="#final-instant">
         <rdfs:comment
@@ -244,7 +244,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#initial-instant -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#initial-instant -->
 
     <owl:DatatypeProperty rdf:about="#initial-instant">
         <rdfs:comment
@@ -255,7 +255,7 @@
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#realized-by -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#realized-by -->
 
     <owl:DatatypeProperty rdf:about="#realized-by">
         <rdfs:comment
@@ -279,7 +279,7 @@ is described using WKT format.</rdfs:comment>
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#administrative-division -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#administrative-division -->
 
     <owl:Class rdf:about="#administrative-division">
         <rdfs:subClassOf rdf:resource="#jurisdictional-domain"/>
@@ -290,7 +290,7 @@ jurisdictional-domain which relates to their parent jurisdiction</dc:description
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#authority-framework -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#authority-framework -->
 
     <owl:Class rdf:about="#authority-framework">
         <rdfs:subClassOf rdf:resource="#jurisdictional-domain"/>
@@ -300,7 +300,7 @@ jurisdictional-domain which relates to their parent jurisdiction</dc:description
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#jurisdictional-domain -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#jurisdictional-domain -->
 
     <owl:Class rdf:about="#jurisdictional-domain">
         <rdfs:subClassOf rdf:resource="&ExtendedDnS;information-object"/>
@@ -311,7 +311,7 @@ jurisdictional-domain which relates to their parent jurisdiction</dc:description
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#jurisdictional-geographic-object -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#jurisdictional-geographic-object -->
 
     <owl:Class rdf:about="#jurisdictional-geographic-object">
         <rdfs:subClassOf rdf:resource="&CommonSenseMapping;political-geographic-object"/>
@@ -328,7 +328,7 @@ jurisdictional-domain which relates to their parent jurisdiction</dc:description
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#state -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#state -->
 
     <owl:Class rdf:about="#state">
         <rdfs:subClassOf rdf:resource="#jurisdictional-domain"/>
@@ -339,7 +339,7 @@ and civil government</dc:description>
     
 
 
-    <!-- http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/dolce.owl#time-interval -->
+    <!-- https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#time-interval -->
 
     <owl:Class rdf:about="#time-interval">
         <rdfs:subClassOf rdf:resource="&dol;time-interval"/>
