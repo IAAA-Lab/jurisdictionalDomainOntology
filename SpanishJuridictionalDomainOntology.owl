@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY jurisdictionalDomain "http://larrosa.cps.unizar.es:8080/knowledgeRepository/jdo/JurisdictionalDomainSchema.owl#" >
+    <!ENTITY DOLCE-Lite "http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#" >
+]>
+
+<rdf:RDF xmlns="https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl"
+     xml:base="https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:DOLCE-Lite="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:jurisdictionalDomain="https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about="">
+    <dc:creator>Advanced Information Systems group (IAAA). University of Zaragoza</dc:creator>
+        <dc:date>2012</dc:date>
+        <dc:title>Spanish Jurisdictional Domain Schema</dc:title>
+        <dc:language>en</dc:language>
+        <dc:format>owl</dc:format>
+        <dc:identifier>https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl</dc:identifier>
+        <dc:subject>Jurisdictional fdomain</dc:subject>
+        <dc:description>Schema with the types of jurisdictional domains in Spain</dc:description>
+        <owl:imports rdf:resource="https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl/JurisdictionalDomainSchema.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#part -->
+
+    <owl:ObjectProperty rdf:about="&DOLCE-Lite;part"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#administrative-division -->
+
+    <owl:Class rdf:about="&jurisdictionalDomain;administrative-division"/>
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#state -->
+
+    <owl:Class rdf:about="&jurisdictionalDomain;state"/>
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#ciudad-autonoma -->
+
+    <owl:Class rdf:about="#ciudad-autonoma">
+        <rdfs:subClassOf rdf:resource="&jurisdictionalDomain;administrative-division"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOLCE-Lite;part"/>
+                <owl:hasValue rdf:resource="#Espa&#241;a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#comunidad-autonoma -->
+
+    <owl:Class rdf:about="#comunidad-autonoma">
+        <rdfs:subClassOf rdf:resource="&jurisdictionalDomain;administrative-division"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOLCE-Lite;part"/>
+                <owl:hasValue rdf:resource="#Espa&#241;a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#comunidad-foral -->
+
+    <owl:Class rdf:about="#comunidad-foral">
+        <rdfs:subClassOf rdf:resource="&jurisdictionalDomain;administrative-division"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOLCE-Lite;part"/>
+                <owl:hasValue rdf:resource="#Espa&#241;a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#municipio -->
+
+    <owl:Class rdf:about="#municipio">
+        <rdfs:subClassOf rdf:resource="&jurisdictionalDomain;administrative-division"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOLCE-Lite;part"/>
+                <owl:someValuesFrom rdf:resource="#provincia"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOLCE-Lite;part"/>
+                <owl:hasValue rdf:resource="#Espa&#241;a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#provincia -->
+
+    <owl:Class rdf:about="#provincia">
+        <rdfs:subClassOf rdf:resource="&jurisdictionalDomain;administrative-division"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&DOLCE-Lite;part"/>
+                <owl:hasValue rdf:resource="#Espa&#241;a"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#comunidad-foral"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&DOLCE-Lite;part"/>
+                        <owl:someValuesFrom rdf:resource="#comunidad-autonoma"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://raw.github.com/stjdo/stjdo/master/SpanishJurisdictionalDomainOntology.owl#Espa&#241;a -->
+
+    <owl:Thing rdf:about="#Espa&#241;a">
+        <rdf:type rdf:resource="&jurisdictionalDomain;state"/>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+
