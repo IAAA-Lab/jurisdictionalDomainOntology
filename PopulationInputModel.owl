@@ -23,7 +23,7 @@
         <dc:title>Jurisdictional domain population input model</dc:title>
         <dc:language>en</dc:language>
         <dc:format>owl</dc:format>
-        <dc:identifier>http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/PopulationInputModel.owl</dc:identifier>
+        <dc:identifier>https://raw.github.com/stjdo/stjdo/master/PopulationInputModel.owl</dc:identifier>
         <dc:subject>Jurisdictional domain</dc:subject>
         <dc:description>Schema that defines the input model of the population process</dc:description>
     </owl:Ontology>
