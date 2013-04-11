@@ -38,7 +38,7 @@
         <dc:subject>Jurisdictional domain</dc:subject>
         <dc:description
             >This ontology propose a model to facilitate the description of the administrative, spatial, and temporal features of jruisdictional domains</dc:description>
-        <owl:imports rdf:resource="http://larrosa.cps.unizar.es:8080/resources/schemas/jdo/Dolce.owl"/>
+        <owl:imports rdf:resource="https://raw.github.com/stjdo/stjdo/master/Dolce.owl"/>
         <dc:isReferencedBy>http://www.tandfonline.com/doi/abs/10.1080/13658816.2011.599811</dc:isReferencedBy>
     </owl:Ontology>
 
