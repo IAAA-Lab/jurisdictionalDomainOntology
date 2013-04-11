@@ -28,7 +28,7 @@
      xmlns:dol="http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:InformationObjects="http://www.loa-cnr.it/ontologies/InformationObjects.owl#">
-    <owl:Ontology rdf:about="">
+    <owl:Ontology rdf:about="https://raw.github.com/stjdo/stjdo/master/JurisdictionalDomainSchema.owl">
         <dc:creator>Advanced Information Systems group (IAAA). University of Zaragoza</dc:creator>
         <dc:date>2011</dc:date>
         <dc:title>Jurisdictional domain ontology</dc:title>
